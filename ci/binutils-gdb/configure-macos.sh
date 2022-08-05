@@ -17,5 +17,6 @@ cd build-binutils-gdb
     --disable-shared \
     --disable-werror \
     --enable-static \
+    --exec-prefix="$PREFIX/macos" \
     --prefix="$PREFIX" \
     --target=m68k-amiga-elf

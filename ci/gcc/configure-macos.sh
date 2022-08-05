@@ -24,6 +24,7 @@ cd build-gcc
     --enable-languages=c,c++ \
     --enable-lto \
     --enable-static \
+    --exec-prefix="$PREFIX/macos" \
     --prefix="$PREFIX" \
     --target=m68k-amiga-elf \
     --with-cpu=68000
