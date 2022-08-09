@@ -42,12 +42,14 @@ jobs:
       - run: ci/binutils-gdb/download-prerequisites.sh
       - run: ci/binutils-gdb/configure-macos.sh
       - run: ci/binutils-gdb/build-macos.sh
+      - run: ci/binutils-gdb/check.sh
       - run: ci/binutils-gdb/install.sh
       - run: ci/gcc/download.sh
       - run: ci/gcc/patch.sh
       - run: ci/gcc/download-prerequisites.sh
       - run: ci/gcc/configure-macos.sh
       - run: ci/gcc/build.sh
+      - run: ci/gcc/check.sh
       - run: ci/gcc/install.sh
       - run: ci/clean-up.sh
       - run: ci/archive-macos.sh
